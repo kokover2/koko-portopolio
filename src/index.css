@@ -7,7 +7,7 @@
 @layer base {
   :root {
     --background: 210 20% 98%;
-    --foreground: 220 20% 10%;
+    --foreground: 270 500% 10%;
 
     --card: 0 0% 100%;
     --card-foreground: 220 20% 10%;
@@ -37,11 +37,12 @@
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(175 80% 40%), hsl(200 80% 50%));
+    --gradient-primary: linear-gradient(180deg, hsl(170, 71%, 43%), hsl(200, 88%, 35%));
     --gradient-hero: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 25% 94%) 100%);
     --shadow-glow: 0 0 40px hsl(175 80% 40% / 0.3);
     --shadow-card: 0 4px 20px hsl(220 20% 10% / 0.08);
     --shadow-card-hover: 0 8px 30px hsl(220 20% 10% / 0.12);
+     --navbg:  linear-gradient(180deg, hsl(199, 92%, 61%), hsl(200, 60%, 90%));
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -55,7 +56,7 @@
 
   .dark {
     --background: 220 25% 6%;
-    --foreground: 210 20% 98%;
+    --foreground: 210 20% 28%;
 
     --card: 220 25% 10%;
     --card-foreground: 210 20% 98%;
@@ -69,11 +70,11 @@
     --secondary: 220 20% 18%;
     --secondary-foreground: 210 20% 90%;
 
-    --muted: 220 20% 15%;
-    --muted-foreground: 220 15% 60%;
+    --muted: 220 20% 25%;
+    --muted-foreground: 220 15% 90%;
 
-    --accent: 175 80% 50%;
-    --accent-foreground: 220 25% 6%;
+    --accent: 200 80% 50%;
+    --accent-foreground: 220 25% 90%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -83,11 +84,14 @@
     --ring: 175 80% 50%;
 
     /* Custom tokens dark */
-    --gradient-primary: linear-gradient(135deg, hsl(175 80% 50%), hsl(200 80% 60%));
-    --gradient-hero: linear-gradient(180deg, hsl(220 25% 6%) 0%, hsl(220 30% 10%) 100%);
-    --shadow-glow: 0 0 60px hsl(175 80% 50% / 0.4);
+    --gradient-primary: linear-gradient(180deg, hsl(170, 100%, 78%), hsl(200, 100%, 77%));
+    --gradient-hero: linear-gradient(180deg, hsl(173, 27%, 6%) 0%, hsl(220 30% 10%) 100%);
+   
+    --shadow-glow: 0 0 60px hsl(175, 99%, 53%);
     --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.3);
     --shadow-card-hover: 0 8px 30px hsl(175 80% 50% / 0.15);
+     --navbg:  linear-gradient(180deg, hsl(199, 92%, 61%), hsl(200, 94%, 36%));
+    
 
     --sidebar-background: 220 25% 8%;
     --sidebar-foreground: 210 20% 90%;
@@ -120,6 +124,10 @@
     @apply bg-clip-text text-transparent;
     background-image: var(--gradient-primary);
   }
+  .bg-navbg {
+    background: var(--navbg);
+  }
+ 
 
   .bg-gradient-hero {
     background: var(--gradient-hero);
