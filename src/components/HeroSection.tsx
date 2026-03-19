@@ -39,8 +39,8 @@ export default function HeroSection() {
             className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
             Fullstack Developer
-            <br />
-            <span className="text-gradient">&amp; Content Creator</span>
+            <br /> 
+            <span className="text-gradient">bebek</span> 
           </motion.h1>
 
           <motion.p
