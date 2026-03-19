@@ -55,7 +55,7 @@
   }
 
   .dark {
-    --background: 220 25% 6%;
+    --background: 230 10% 4%;
     --foreground: 210 20% 28%;
 
     --card: 220 25% 10%;
@@ -70,8 +70,8 @@
     --secondary: 220 20% 18%;
     --secondary-foreground: 210 20% 90%;
 
-    --muted: 220 20% 25%;
-    --muted-foreground: 220 15% 90%;
+    --muted: 190, 70%, 60%;
+    --muted-foreground: 230 78% 90%;
 
     --accent: 200 80% 50%;
     --accent-foreground: 220 25% 90%;
@@ -90,7 +90,7 @@
     --shadow-glow: 0 0 60px hsl(175, 99%, 53%);
     --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.3);
     --shadow-card-hover: 0 8px 30px hsl(175 80% 50% / 0.15);
-     --navbg:  linear-gradient(180deg, hsl(199, 92%, 61%), hsl(200, 94%, 36%));
+     --navbg:  linear-gradient(180deg, hsl(199, 100%, 74%), hsl(200, 91%, 30%));
     
 
     --sidebar-background: 220 25% 8%;
